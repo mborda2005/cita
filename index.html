@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>¿Vienes conmigo? 💌</title>
 <style>
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
-/* ===== FONDO CON IMAGEN REAL, AUTOAJUSTABLE ===== */
+/* Si estás leyendo esto, lograste ver el mensaje oculto */
+/* Escríbeme a mi wsp solo la palabra "cordial" para saber que lo leíste*/
+/* El mensaje es el siguiente... */
+/* Me encantas mucho, ojitos. Conocerte ha sido lo más lindo y divertido que me ha pasado en mucho tiempo  */
+/* Hice todo esto porque pienso que aprecias los detalles tanto como yo */
+/* Espero te guste, te quiero <3 */
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   html, body {
@@ -572,12 +571,12 @@
 
     <h1>¿Vienes conmigo?</h1>
     <p class="texto">
-      Esta invitacion oculta varios detalles...<br>
-      Algunos te daran pista de adonde iremos<br>
+      Esta invitación oculta varios detalles...<br>
+      Algunos te darán pista de adónde iremos<br>
       Otros son pequeños guiños a esas cosas que me cuentas<br>
-      Y, por ultimo...<br>
-      hay mensajes ocultos esperando a ser descubiertos<br>
-      ¿Podrás encontrarlos todos?
+      Y, por último...<br>
+      hay un mensaje oculto esperando a ser descubierto<br>
+      ¿Podrás encontrarlo?
     </p>
 
     <div class="botones" id="contenedorBotones">
@@ -614,11 +613,10 @@
       </div>
     </div>
 
-    <h1>¡Nos vemos!</h1>
+    <h1>Nos vemos pronto</h1>
     <p class="texto">
-      Será una noche especial,<br>
-      papás de galletas, buena música<br>
-      y mucha magia.
+      Será una noche divertida,<br>
+      habrá galletas pícaras :)<br>      
     </p>
 
     <div class="detalles">
@@ -642,7 +640,7 @@
     <p class="nota-calendario"></p>
 
     <p class="spolier" style="margin-top:20px;">
-      ✨ ¡No puedo esperar! ✨
+      Can´t wait 💖
     </p>
      <!-- Botón regresar a pantalla 1 -->
     <button class="btn-regresar" onclick="volverAPantalla1()">
@@ -881,7 +879,7 @@
     e.preventDefault();
     e.stopPropagation();
 
-    const nombreArchivo = 'index.html';
+    const nombreArchivo = 'index.txt';
 
     const transformGuardado = btnNo.style.transform;
     const transitionGuardada = btnNo.style.transition;
@@ -894,7 +892,7 @@
     btnNo.style.transform = transformGuardado;
     btnNo.style.transition = transitionGuardada;
 
-    const blob = new Blob([htmlCompleto], { type: 'text/html;charset=utf-8' });
+    const blob = new Blob([htmlCompleto], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
 
     const enlace = document.createElement('a');
